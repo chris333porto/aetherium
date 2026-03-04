@@ -1,418 +1,1848 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    body {background-color: #05050c}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; min-height: 18.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.5px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.5px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c; background-color: #a487ff}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; min-height: 18.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #a487ff; min-height: 18.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #57dbca; min-height: 18.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.6px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff}
-    p.p9 {margin: 0.0px 0.0px 52.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.1px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c; background-color: #a487ff}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.1px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.3px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.055); min-height: 18.0px}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.1px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p17 {margin: 0.0px 0.0px 24.0px 0.0px; font: 15.2px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px 'Apple Symbols'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.8px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.2px 'Geeza Pro'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 128.0px 'Helvetica Neue'; color: #ffffff; color: rgba(255, 255, 255, 0.02); -webkit-text-stroke: rgba(255, 255, 255, 0.02)}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.4px 'Hiragino Sans'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.3px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.4px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.4px 'Zapf Dingbats'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.4px 'Apple SD Gothic Neo'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.1px 'Helvetica Neue'; color: #57dbca; -webkit-text-stroke: #57dbca}
-    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.9px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.3px 'Helvetica Neue'; color: #57dbca; -webkit-text-stroke: #57dbca; background-color: #57dbca; min-height: 11.0px}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.3px 'Helvetica Neue'; color: #57dbca; -webkit-text-stroke: #57dbca}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.2px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.3px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.9px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.9px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.7px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.1px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.3px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p45 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #0000e9; -webkit-text-stroke: #0000e9; background-color: #57dbca; min-height: 18.0px}
-    p.p46 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.2px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c; background-color: #a487ff}
-    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.1px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c}
-    p.p49 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #a487ff; min-height: 18.0px}
-    p.p50 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.1px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p51 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.8px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p52 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #57dbca; min-height: 18.0px}
-    p.p53 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #b79245; min-height: 18.0px}
-    p.p54 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #dc859c; min-height: 18.0px}
-    p.p55 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.3px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff}
-    p.p56 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p57 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p58 {margin: 0.0px 0.0px 0.0px 0.0px; font: 19.2px 'Hiragino Sans'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p59 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.5px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p60 {margin: 0.0px 0.0px 0.0px 0.0px; font: 19.2px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p61 {margin: 0.0px 0.0px 0.0px 0.0px; font: 19.2px 'Apple SD Gothic Neo'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p62 {margin: 0.0px 0.0px 0.0px 0.0px; font: 19.2px 'Zapf Dingbats'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p63 {margin: 0.0px 0.0px 0.0px 0.0px; font: 19.2px 'Apple Symbols'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p64 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.1px 'Helvetica Neue'; color: #b79245; -webkit-text-stroke: #b79245}
-    p.p65 {margin: 0.0px 0.0px 0.0px 0.0px; font: 28.8px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p66 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.1px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p67 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.8px 'Helvetica Neue'; color: #b79245; -webkit-text-stroke: #b79245}
-    p.p68 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.6px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p69 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.1px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff}
-    p.p70 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 20.0px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p71 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6; background-color: #222035; min-height: 18.0px}
-    p.p72 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.3px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    p.p74 {margin: 0.0px 136.0px 52.0px 136.0px; text-align: center; text-indent: -136.0px; font: 16.0px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    p.p75 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.6px 'Helvetica Neue'; color: #05050c; -webkit-text-stroke: #05050c; background-color: #a487ff}
-    p.p76 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.6px 'Helvetica Neue'; color: #b1aacc; -webkit-text-stroke: #b1aacc}
-    p.p77 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    p.p78 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.2px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6}
-    p.p79 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    p.p80 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #222035; -webkit-text-stroke: #222035}
-    li.li28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.3px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    li.li59 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.5px 'Helvetica Neue'; color: #66607b; -webkit-text-stroke: #66607b}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: rgba(5, 5, 12, 0.6)}
-    span.s3 {font-kerning: none; color: #a487ff; -webkit-text-stroke: 0px #a487ff}
-    span.s4 {font-kerning: none; background-color: #080814}
-    span.s5 {font-kerning: none; color: #e8e4f6; background-color: #080814; -webkit-text-stroke: 0px #e8e4f6}
-    span.s6 {font-kerning: none; color: #e8e4f6; -webkit-text-stroke: 0px #e8e4f6}
-    span.s7 {font-kerning: none; background-color: #0b0a17}
-    span.s8 {background-color: #0b0a17; -webkit-text-stroke: 0px #000000}
-    span.s9 {font: 9.9px 'Helvetica Neue'; font-kerning: none; color: #05050c; background-color: #0b0a17; -webkit-text-stroke: 0px #05050c}
-    span.s10 {font-kerning: none; background-color: #0d0c1c}
-    span.s11 {font: 9.0px 'Lucida Grande'; font-kerning: none; background-color: #0b0a17}
-    span.s12 {font-kerning: none; background-color: #a487ff}
-    span.s13 {font-kerning: none; color: #a487ff; background-color: #080814; -webkit-text-stroke: 0px #a487ff}
-    span.s14 {font-kerning: none; color: #66607b; background-color: #080814; -webkit-text-stroke: 0px #66607b}
-    span.s15 {font-kerning: none; color: #66607b; -webkit-text-stroke: 0px #66607b}
-    span.s16 {background-color: #080814; -webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aetherium — Where Consciousness Connects</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Geist:wght@200;300;400;500&family=Geist+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════
+   RESET & TOKENS
+═══════════════════════════════════════ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --void:     #04040e;
+  --deep:     #07071a;
+  --surface:  #0b0b1e;
+  --panel:    #0f0f26;
+  --lift:     #14142e;
+  --rule:     rgba(255,255,255,0.055);
+  --glow:     rgba(160,130,255,0.18);
+  --text:     #edeaf8;
+  --text2:    #bfbad6;
+  --muted:    #79748e;
+  --faint:    #2e2c45;
+  --violet:   #b49eff;
+  --violet2:  #8a6fff;
+  --teal:     #64e0d4;
+  --gold:     #c4a256;
+  --rose:     #e49aac;
+  --serif:    'Playfair Display', Georgia, serif;
+  --sans:     'Geist', system-ui, sans-serif;
+  --mono:     'Geist Mono', monospace;
+  --ease:     cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--void);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ═══════════════════════════════════════
+   CANVAS / STARFIELD
+═══════════════════════════════════════ */
+#canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ═══════════════════════════════════════
+   NAV
+═══════════════════════════════════════ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+  background: rgba(4,4,14,0.6);
+  backdrop-filter: blur(28px) saturate(1.6);
+  -webkit-backdrop-filter: blur(28px) saturate(1.6);
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.5s;
+}
+nav.opaque { background: rgba(4,4,14,0.96); }
+
+.nav-logo {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links a {
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text); }
+
+.nav-enter {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--void);
+  background: var(--violet);
+  padding: 9px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity 0.2s, box-shadow 0.3s;
+}
+.nav-enter:hover {
+  opacity: 0.86;
+  box-shadow: 0 4px 24px rgba(180,158,255,0.35);
+}
+
+/* ═══════════════════════════════════════
+   HERO
+═══════════════════════════════════════ */
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 140px 48px 110px;
+  overflow: hidden;
+}
+
+/* Orb system */
+.orb-system {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -52%);
+  pointer-events: none;
+  z-index: 0;
+}
+.orb {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.o-nebula {
+  width: 700px; height: 700px;
+  background: radial-gradient(ellipse at center,
+    rgba(100,70,220,0.14) 0%,
+    rgba(100,70,220,0.05) 35%,
+    transparent 65%);
+  animation: orb-breathe 14s ease-in-out infinite;
+}
+.o-mid {
+  width: 480px; height: 480px;
+  background: radial-gradient(ellipse at center,
+    rgba(160,130,255,0.09) 0%,
+    transparent 60%);
+  animation: orb-breathe 10s ease-in-out infinite;
+  animation-delay: -3s;
+}
+.o-r1 {
+  width: 540px; height: 540px;
+  border: 1px solid rgba(180,158,255,0.09);
+  animation: orb-spin 60s linear infinite;
+}
+.o-r2 {
+  width: 400px; height: 400px;
+  border: 1px solid rgba(100,224,212,0.07);
+  animation: orb-spin 45s linear infinite reverse;
+}
+.o-r3 {
+  width: 660px; height: 660px;
+  border: 1px solid rgba(180,158,255,0.04);
+  animation: orb-spin 90s linear infinite;
+}
+/* orbiting particles */
+.o-particle {
+  width: 4px; height: 4px;
+  background: var(--violet);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgba(180,158,255,0.6);
+  animation: orb-spin 12s linear infinite;
+  transform-origin: 270px 0;
+}
+.o-particle2 {
+  width: 3px; height: 3px;
+  background: var(--teal);
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(100,224,212,0.6);
+  animation: orb-spin 18s linear infinite reverse;
+  transform-origin: 200px 0;
+}
+.o-core {
+  width: 10px; height: 10px;
+  background: var(--violet);
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px 5px rgba(180,158,255,0.6),
+    0 0 60px 20px rgba(180,158,255,0.2);
+  animation: core-pulse 4s ease-in-out infinite;
+}
+
+@keyframes orb-breathe {
+  0%,100% { transform:translate(-50%,-50%) scale(1); opacity:0.7; }
+  50%      { transform:translate(-50%,-50%) scale(1.1); opacity:1; }
+}
+@keyframes orb-spin {
+  from { transform:translate(-50%,-50%) rotate(0deg); }
+  to   { transform:translate(-50%,-50%) rotate(360deg); }
+}
+@keyframes core-pulse {
+  0%,100% { box-shadow:0 0 18px 5px rgba(180,158,255,0.55), 0 0 50px 18px rgba(180,158,255,0.18); }
+  50%     { box-shadow:0 0 30px 10px rgba(180,158,255,0.75), 0 0 80px 28px rgba(180,158,255,0.28); }
+}
+
+/* Hero text */
+.hero-content { position:relative; z-index:1; }
+
+.hero-kicker {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: rise 1s 0.2s var(--ease) forwards;
+}
+
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: rise 1s 0.35s var(--ease) forwards;
+}
+.hero-h1 em {
+  font-style: italic;
+  color: var(--violet);
+}
+
+.hero-sub {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto 52px;
+  line-height: 1.88;
+  opacity: 0;
+  animation: rise 1s 0.5s var(--ease) forwards;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: rise 1s 0.65s var(--ease) forwards;
+}
+
+.btn-fill {
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--void);
+  background: var(--violet);
+  padding: 14px 34px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.2s, box-shadow 0.3s;
+}
+.btn-fill:hover {
+  opacity: 0.85;
+  box-shadow: 0 6px 32px rgba(180,158,255,0.35);
+}
+
+.btn-outline {
+  font-size: 0.82rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--text2);
+  border: 1px solid var(--rule);
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-outline:hover {
+  border-color: rgba(255,255,255,0.18);
+  color: var(--text);
+}
+
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 40px; left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  animation: rise 0.8s 1.3s var(--ease) forwards;
+}
+.scroll-track {
+  width: 1px;
+  height: 52px;
+  background: linear-gradient(to bottom, transparent, var(--violet), transparent);
+  animation: scrolltick 2.5s ease-in-out infinite;
+}
+.scroll-lbl {
+  font-family: var(--mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+@keyframes scrolltick {
+  0%,100% { opacity:0.25; transform:scaleY(0.9); }
+  50%     { opacity:0.6;  transform:scaleY(1.1); }
+}
+@keyframes rise {
+  from { opacity:0; transform:translateY(22px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* ═══════════════════════════════════════
+   SHARED UTILITIES
+═══════════════════════════════════════ */
+.hr { height:1px; background:var(--rule); position:relative; z-index:1; }
+section { position:relative; z-index:1; }
+
+.w     { max-width:1140px; margin:0 auto; padding:0 56px; }
+.w-sm  { max-width:740px;  margin:0 auto; padding:0 56px; }
+.w-md  { max-width:960px;  margin:0 auto; padding:0 56px; }
+
+.sec   { padding:120px 0; }
+.sec-d { padding:120px 0; background:var(--deep); }
+.sec-s { padding:120px 0; background:var(--surface); }
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  font-weight: 300;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.chip-v { color:var(--violet); }
+.chip-t { color:var(--teal); }
+.chip-g { color:var(--gold); }
+
+.sec-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+.sec-title em { font-style:italic; color:var(--violet); }
+
+.sec-body {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.92;
+}
+
+/* grid helpers */
+.g2 { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:8px; overflow:hidden; }
+.g3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:8px; overflow:hidden; }
+.g4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:8px; overflow:hidden; }
+
+/* ═══════════════════════════════════════
+   2. THE PROBLEM
+═══════════════════════════════════════ */
+.problem-lead {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+
+.problem-cards { margin-top: 0; }
+
+.prob-card {
+  background: var(--surface);
+  padding: 44px 40px;
+  transition: background 0.3s;
+}
+.prob-card:hover { background: var(--panel); }
+
+.prob-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+.prob-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+.prob-body {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.88;
+}
+
+/* ═══════════════════════════════════════
+   3. HOW IT WORKS — 4 STEPS
+═══════════════════════════════════════ */
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 0;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 72px;
+}
+
+.step {
+  background: var(--surface);
+  padding: 52px 38px 48px;
+  border-right: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.step:last-child { border-right: none; }
+.step:hover { background: var(--panel); }
+
+.step-ghost {
+  position: absolute;
+  bottom: -16px; right: 14px;
+  font-family: var(--serif);
+  font-size: 8rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.02);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.step-num {
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.18em;
+  color: var(--violet);
+  margin-bottom: 24px;
+}
+
+.step-icon {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+.step-title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.step-body {
+  font-size: 0.79rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.88;
+}
+
+.step-list {
+  list-style: none;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.step-list li {
+  font-size: 0.77rem;
+  font-weight: 300;
+  color: var(--muted);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.65;
+}
+.step-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--violet);
+}
+
+/* ═══════════════════════════════════════
+   4. LIVE GATHERINGS
+═══════════════════════════════════════ */
+.gatherings-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: start;
+  padding-top: 72px;
+}
+
+/* Live room UI */
+.live-room {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.room-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--rule);
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room-header-left {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  color: var(--text2);
+}
+.room-header-right {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+.live-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: liveblink 2s ease-in-out infinite;
+}
+@keyframes liveblink { 0%,100%{opacity:1;} 50%{opacity:0.35;} }
+
+.room-participants {
+  padding: 16px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.participant {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 7px 12px;
+  border-radius: 20px;
+  transition: border-color 0.25s;
+  cursor: default;
+}
+.participant:hover { border-color: rgba(180,158,255,0.22); }
+.p-av {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: var(--void);
+  flex-shrink: 0;
+}
+.p-info {}
+.p-name { font-size: 0.7rem; font-weight: 300; color: var(--text2); line-height: 1.2; }
+.p-type { font-family: var(--mono); font-size: 0.52rem; letter-spacing: 0.06em; color: var(--muted); }
+
+.room-messages {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 220px;
+}
+.msg {
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  animation: msgin 0.5s var(--ease) forwards;
+}
+.msg:nth-child(1) { animation-delay: 0.6s; }
+.msg:nth-child(2) { animation-delay: 2.0s; }
+.msg:nth-child(3) { animation-delay: 3.6s; }
+.msg:nth-child(4) { animation-delay: 5.2s; }
+@keyframes msgin {
+  from { opacity:0; transform:translateY(8px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+.msg-av {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--void);
+  margin-top: 2px;
+}
+.msg-body {}
+.msg-who { font-size: 0.68rem; font-weight: 500; color: var(--text2); margin-bottom: 3px; }
+.msg-text { font-size: 0.77rem; font-weight: 300; color: var(--muted); line-height: 1.72; }
+
+.room-input-bar {
+  margin: 0 22px 20px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 11px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rib-hint { font-size: 0.73rem; color: var(--faint); }
+.rib-key {
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+  color: var(--violet);
+}
+
+/* Active gatherings list */
+.active-gatherings {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ag-item {
+  background: var(--surface);
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: background 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ag-item:hover { background: var(--panel); }
+
+.ag-left {}
+.ag-topic {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.ag-meta {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.ag-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.ag-count {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  color: var(--teal);
+}
+.ag-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--teal);
+  animation: liveblink 2s ease-in-out infinite;
+}
+.ag-enter {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--void);
+  background: var(--violet);
+  padding: 6px 14px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.ag-item:hover .ag-enter { opacity: 1; }
+
+.gath-cta-row {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* ═══════════════════════════════════════
+   5. IDENTITY SYSTEM
+═══════════════════════════════════════ */
+.identity-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding-top: 72px;
+}
+
+.identity-text {}
+
+.id-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 32px;
+}
+.id-feat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.2s;
+}
+.id-feat:last-child { border-bottom: none; }
+.id-feat:hover { background: var(--panel); }
+.id-feat-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.id-feat-name {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--text2);
+  flex: 1;
+}
+.id-feat-desc {
+  font-size: 0.74rem;
+  font-weight: 300;
+  color: var(--muted);
+}
+
+/* Avatar circle visualization */
+.avatar-circle {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.av-center-card {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 28px;
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+.avc-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.avc-orb {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%,
+    rgba(180,158,255,0.8),
+    rgba(100,224,212,0.4),
+    rgba(196,162,86,0.3));
+  box-shadow: 0 0 20px rgba(180,158,255,0.4);
+  border: 1px solid rgba(180,158,255,0.3);
+}
+.avc-info {}
+.avc-name { font-size: 0.9rem; font-weight: 500; color: var(--text); }
+.avc-arch {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-top: 2px;
+}
+
+.avc-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.avcb {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.avcb-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+}
+.avcb-track { height: 2px; background: var(--rule); border-radius: 2px; }
+.avcb-fill {
+  height: 100%;
+  border-radius: 2px;
+  width: 0;
+  animation: bfill 2s ease-out forwards;
+}
+.bf-v { background:var(--violet); animation-delay:0.4s; }
+.bf-t { background:var(--teal);   animation-delay:0.6s; }
+.bf-g { background:var(--gold);   animation-delay:0.8s; }
+.bf-r { background:var(--rose);   animation-delay:1.0s; }
+@keyframes bfill { to { width:var(--w); } }
+
+.avc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.avc-tag {
+  font-family: var(--mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  padding: 4px 9px;
+  border-radius: 3px;
+  transition: all 0.25s;
+}
+.av-center-card:hover .avc-tag { border-color:rgba(180,158,255,0.25); color:var(--text2); }
+
+/* floating mini-avatars */
+.float-av {
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  z-index: 3;
+  animation: float 7s ease-in-out infinite;
+}
+.fa1 { top: 20px; left: -20px; animation-delay: 0s; }
+.fa2 { top: 60px; right: -30px; animation-delay: -2.5s; }
+.fa3 { bottom: 80px; left: -40px; animation-delay: -5s; }
+.fa4 { bottom: 40px; right: -20px; animation-delay: -1.5s; }
+
+@keyframes float {
+  0%,100% { transform:translateY(0); }
+  50%     { transform:translateY(-12px); }
+}
+.fa-dot {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.fa-name { font-size: 0.7rem; font-weight: 300; color: var(--text2); white-space:nowrap; }
+.fa-type { font-family: var(--mono); font-size: 0.52rem; color: var(--muted); white-space:nowrap; }
+
+/* ═══════════════════════════════════════
+   6. COMMUNITY
+═══════════════════════════════════════ */
+.community-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 64px;
+}
+.ct {
+  background: var(--surface);
+  padding: 40px 36px;
+  transition: background 0.3s;
+}
+.ct:hover { background: var(--panel); }
+.ct-icon { font-size: 1.2rem; margin-bottom: 16px; display:block; }
+.ct-name { font-size: 0.9rem; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+.ct-body { font-size: 0.78rem; font-weight: 300; color: var(--muted); line-height: 1.85; }
+
+/* member mosaic */
+.member-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 40px;
+}
+.member-pill {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.25s;
+}
+.member-pill:hover {
+  color: var(--text2);
+  border-color: rgba(180,158,255,0.25);
+  background: rgba(180,158,255,0.05);
+}
+
+/* ═══════════════════════════════════════
+   7. EXPERIENTIAL LAYER
+═══════════════════════════════════════ */
+.exp-bento {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 64px;
+}
+.exp-hero-card {
+  grid-row: 1 / 3;
+  background: var(--panel);
+  padding: 64px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 380px;
+  overflow: hidden;
+}
+.exp-hero-card::before {
+  content: '';
+  position: absolute; inset:0;
+  background: radial-gradient(ellipse at 30% 40%,
+    rgba(180,158,255,0.08) 0%, transparent 65%);
+}
+.exp-tag {
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  position: relative; z-index:1;
+}
+.exp-title {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  position: relative; z-index:1;
+}
+.exp-desc {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 340px;
+  line-height: 1.85;
+  position: relative; z-index:1;
+}
+.exp-sm-card {
+  background: var(--surface);
+  padding: 32px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background 0.3s;
+}
+.exp-sm-card:hover { background: var(--panel); }
+.exp-sm-tag {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.exp-sm-title {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* ═══════════════════════════════════════
+   8. MANIFESTO
+═══════════════════════════════════════ */
+.manifesto-sec {
+  padding: 130px 0;
+  background: var(--deep);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.manifesto-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 56px;
+  text-align: center;
+}
+.manifesto-text {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2.4vw, 1.9rem);
+  font-weight: 400;
+  line-height: 1.62;
+  color: var(--text2);
+}
+.manifesto-text em { font-style:italic; color:var(--muted); }
+.manifesto-text strong { font-weight:400; color:var(--text); }
+.manifesto-rule {
+  width: 28px;
+  height: 1px;
+  background: var(--faint);
+  margin: 56px auto;
+}
+.manifesto-sig {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* ═══════════════════════════════════════
+   9. FINAL CTA
+═══════════════════════════════════════ */
+.cta-sec {
+  padding: 160px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-glow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; height: 400px;
+  background: radial-gradient(ellipse at center,
+    rgba(100,70,220,0.09) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  max-width: 700px;
+  margin: 0 auto 22px;
+}
+.cta-h2 em { font-style:italic; color:var(--violet); }
+.cta-sub {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto 52px;
+  line-height: 1.88;
+}
+.cta-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.cta-note {
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* ═══════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════ */
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 64px 0 48px;
+  background: var(--deep);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 52px;
+}
+.footer-brand {}
+.footer-logo {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+.footer-tagline {
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.78;
+  max-width: 280px;
+}
+.footer-col-label {
+  font-family: var(--mono);
+  font-size: 0.54rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 18px;
+}
+.footer-links { list-style:none; display:flex; flex-direction:column; gap:11px; }
+.footer-links a {
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color:var(--text); }
+.footer-bottom {
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy { font-family:var(--mono); font-size:0.6rem; color:var(--faint); letter-spacing:0.06em; }
+.footer-legal { display:flex; gap:24px; }
+.footer-legal a { font-size:0.6rem; color:var(--faint); text-decoration:none; transition:color 0.2s; }
+.footer-legal a:hover { color:var(--muted); }
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media(max-width:980px){
+  nav { padding:0 24px; }
+  .nav-links { display:none; }
+  .w,.w-sm,.w-md { padding:0 24px; }
+  .sec,.sec-d,.sec-s { padding:80px 0; }
+  .problem-lead { grid-template-columns:1fr; gap:40px; }
+  .steps-row { grid-template-columns:1fr 1fr; }
+  .gatherings-layout { grid-template-columns:1fr; }
+  .identity-layout { grid-template-columns:1fr; }
+  .community-types { grid-template-columns:1fr 1fr; }
+  .exp-bento { grid-template-columns:1fr; grid-template-rows:auto; }
+  .exp-hero-card { grid-row: auto; }
+  .footer-grid { grid-template-columns:1fr 1fr; gap:32px; }
+}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s2">AETHERIUM</span></p>
-<p class="p3"><span class="s1">Enter a Gathering</span></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p6"><span class="s1"></span><br></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">HUMAN DEVELOPMENT PLATFORM</span></p>
-<h1 style="margin: 0.0px 0.0px 28.0px 0.0px; text-align: center; font: 56.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6"><span class="s1">Where Consciousness<br>
-</span><span class="s3">Connects</span></h1>
-<p class="p9"><span class="s1">Aetherium is a platform where people explore who they are, connect through meaningful discourse, and participate in experiences designed for human development.</span></p>
-<p class="p10"><span class="s1">Enter a Gathering</span></p>
-<p class="p11"><span class="s1">Explore the Platform</span></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p12"><span class="s1">SCROLL</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p14"><span class="s4">THE PROBLEM</span></p>
-<h2 style="margin: 0.0px 0.0px 20.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff"><span class="s5">The Internet Lost</span><span class="s6"><br>
-</span><span class="s4">Something Important</span></h2>
-<p class="p16"><span class="s4">Early digital culture had something modern platforms quietly erased: real-time presence. The ability to step into a space and find others already there — engaged, curious, alive to the moment.</span><span class="s1"><br>
-<br>
-</span><span class="s4">Today's platforms have replaced that with something else entirely.</span></p>
-<p class="p17"><span class="s4">Social media rewards performance over presence. Feeds replace genuine conversation. Algorithms surface what provokes rather than what illuminates.</span></p>
-<p class="p16"><span class="s4">People rarely encounter one another at the level of ideas, values, or personal development. The digital world was built for attention — not for depth.</span></p>
-<p class="p18"><span class="s4">Aetherium is designed to restore meaningful exchange.</span></p>
-<p class="p19"><span class="s7">⊘</span></p>
-<p class="p20"><span class="s7">Social Media Rewards Performance</span></p>
-<p class="p21"><span class="s7">Platforms built around followers, likes, and visibility encourage people to broadcast rather than converse. The architecture rewards performance. Real presence disappears behind the feed.</span></p>
-<p class="p22"><span class="s7">◌</span></p>
-<p class="p20"><span class="s7">Online Connection Lacks Depth</span></p>
-<p class="p21"><span class="s7">Dating platforms reduce people to photographs and brief descriptions. Professional networks optimize for status signals. Nowhere online do people encounter each other through the lens of curiosity, ideas, and genuine development.</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p14"><span class="s1">HOW IT WORKS</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6"><span class="s1">From self-discovery<br>
-</span><span class="s3">to real connection.</span></h2>
-<p class="p16"><span class="s1">Aetherium guides you through a structured journey — beginning with who you are, and opening toward who you might become in relationship with others.</span></p>
-<p class="p24"><span class="s7">1</span></p>
-<p class="p14"><span class="s7">Step 01</span></p>
-<p class="p25"><span class="s7">◎</span></p>
-<p class="p26"><span class="s7">Self-Discovery</span></p>
-<p class="p27"><span class="s7">Complete reflective assessments that explore who you are at depth.</span></p>
-<ul class="ul1">
-  <li class="li28"><span class="s8"></span><span class="s7">Personality structure</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Core values</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Intellectual curiosity</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Developmental orientation</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Cognitive style</span></li>
-</ul>
-<p class="p24"><span class="s7">2</span></p>
-<p class="p14"><span class="s7">Step 02</span></p>
-<p class="p29"><span class="s7">⊕</span></p>
-<p class="p26"><span class="s7">Create Your Identity</span></p>
-<p class="p27"><span class="s7">Your results generate a living Aetherium Identity — your presence within the platform.</span></p>
-<ul class="ul1">
-  <li class="li28"><span class="s8"></span><span class="s7">Personality insights</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Archetypal orientation</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">AI-generated avatar</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Evolving profile</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Growth edge reflection</span></li>
-</ul>
-<p class="p24"><span class="s7">3</span></p>
-<p class="p14"><span class="s7">Step 03</span></p>
-<p class="p30"><span class="s7">❋</span></p>
-<p class="p26"><span class="s7">Enter a Gathering</span></p>
-<p class="p27"><span class="s7">Step into a live conversation where thoughtful people are already engaged in dialogue.</span></p>
-<ul class="ul1">
-  <li class="li28"><span class="s8"></span><span class="s7">See who is present</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Enter discussions in real time</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Move between topics</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Deep, moderated discourse</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">No feed, no algorithm</span></li>
-</ul>
-<p class="p24"><span class="s7">4</span></p>
-<p class="p14"><span class="s7">Step 04</span></p>
-<p class="p31"><span class="s7">◈</span></p>
-<p class="p26"><span class="s7">Participate in Experiences</span></p>
-<p class="p27"><span class="s7">Digital conversation evolves into real-world connection and shared experience.</span></p>
-<ul class="ul1">
-  <li class="li28"><span class="s8"></span><span class="s7">Retreats and expeditions</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Learning communities</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Cultural gatherings</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">City chapters</span></li>
-  <li class="li28"><span class="s8"></span><span class="s7">Physical spaces</span></li>
-</ul>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p32"><span class="s4">LIVE NOW</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff"><span class="s5">Active </span><span class="s4">Gatherings</span></h2>
-<p class="p16"><span class="s4">Gatherings are live conversation environments. Enter any time, see who is present, and step into dialogue that is already unfolding. This is not a feed. It is a room.</span></p>
-<p class="p34"><span class="s7">Philosophy of Consciousness</span></p>
-<p class="p35"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">LIVE · 12 PRESENT </span><span class="s9">A</span></p>
-<p class="p37"><span class="s7">Alex C.</span></p>
-<p class="p38"><span class="s7">The Architect</span></p>
-<p class="p39"><span class="s7">M</span></p>
-<p class="p37"><span class="s7">Maya R.</span></p>
-<p class="p38"><span class="s7">The Explorer</span></p>
-<p class="p39"><span class="s7">J</span></p>
-<p class="p37"><span class="s7">James O.</span></p>
-<p class="p38"><span class="s7">The Strategist</span></p>
-<p class="p39"><span class="s7">S</span></p>
-<p class="p37"><span class="s7">Sara K.</span></p>
-<p class="p38"><span class="s7">The Philosopher</span></p>
-<p class="p39"><span class="s10">A</span></p>
-<p class="p40"><span class="s10">Alex C.</span></p>
-<p class="p28"><span class="s10">If consciousness is fundamentally relational — as Whitehead suggests — what does that mean for how we design environments for human growth?</span></p>
-<p class="p39"><span class="s10">M</span></p>
-<p class="p40"><span class="s10">Maya R.</span></p>
-<p class="p28"><span class="s10">It means the container matters as much as the content. The room is part of the mind — which is exactly why the physical spaces Aetherium is building aren't optional.</span></p>
-<p class="p39"><span class="s10">J</span></p>
-<p class="p40"><span class="s10">James O.</span></p>
-<p class="p28"><span class="s10">Bateson called that second-order change. You can't transform from within the same frame. The frame itself has to shift.</span></p>
-<p class="p39"><span class="s10">S</span></p>
-<p class="p40"><span class="s10">Sara K.</span></p>
-<p class="p28"><span class="s10">This is why I joined. Where else on the internet does this conversation actually happen?</span></p>
-<p class="p41"><span class="s7">Share your perspective…</span></p>
-<p class="p42"><span class="s11">↵</span><span class="s7"> Enter</span></p>
-<p class="p32"><span class="s4">ALL ACTIVE GATHERINGS</span></p>
-<p class="p43"><span class="s7">Philosophy of Consciousness</span></p>
-<p class="p44"><span class="s7">Philosophy · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">12 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p43"><span class="s7">The Future of AI &amp; Consciousness</span></p>
-<p class="p44"><span class="s7">Technology · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">9 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p43"><span class="s7">Modern Spirituality &amp; Science</span></p>
-<p class="p44"><span class="s7">Philosophy · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">6 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p43"><span class="s7">Human Flourishing in the 21st Century</span></p>
-<p class="p44"><span class="s7">Culture · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">11 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p43"><span class="s7">Integral Approaches to Leadership</span></p>
-<p class="p44"><span class="s7">Development · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">8 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p43"><span class="s7">The Art of Meaningful Community</span></p>
-<p class="p44"><span class="s7">Community · Open</span></p>
-<p class="p45"><span class="s1"></span><br></p>
-<p class="p36"><span class="s7">5 gathered</span></p>
-<p class="p46"><span class="s1">Enter →</span></p>
-<p class="p47"><span class="s12">Enter a Gathering</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p14"><span class="s1">THE IDENTITY SYSTEM</span></p>
-<h2 style="margin: 0.0px 0.0px 20.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6"><span class="s1">Your Aetherium </span><span class="s3">Identity</span></h2>
-<p class="p17"><span class="s1">Modern platforms reduce identity to a photograph and a follower count. Aetherium takes a different approach. Your profile reflects who you are becoming — not simply how you appear.</span></p>
-<p class="p16"><span class="s1">Through assessments, archetypal orientation, and AI synthesis, each member develops a living identity that expresses their developmental path, their curiosity, and their intellectual temperament.</span></p>
-<p class="p49"><span class="s1"></span><br></p>
-<p class="p50"><span class="s7">Developmental Insights</span></p>
-<p class="p51"><span class="s7">Your stage and growth edges</span></p>
-<p class="p52"><span class="s1"></span><br></p>
-<p class="p50"><span class="s7">Personality Patterns</span></p>
-<p class="p51"><span class="s7">How you think and engage</span></p>
-<p class="p53"><span class="s1"></span><br></p>
-<p class="p50"><span class="s7">Archetypal Symbolism</span></p>
-<p class="p51"><span class="s7">Your orientation and essence</span></p>
-<p class="p54"><span class="s1"></span><br></p>
-<p class="p50"><span class="s7">AI-Generated Avatar</span></p>
-<p class="p51"><span class="s7">Symbolic visual identity</span></p>
-<p class="p49"><span class="s1"></span><br></p>
-<p class="p50"><span class="s7">Evolving Profile</span></p>
-<p class="p51"><span class="s7">Changes as you grow</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p37"><span class="s10">The Explorer</span></p>
-<p class="p38"><span class="s10">Stage III · Achiever</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p37"><span class="s10">The Builder</span></p>
-<p class="p38"><span class="s10">Stage IV · Pluralist</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p37"><span class="s10">The Philosopher</span></p>
-<p class="p38"><span class="s10">Stage V · Integral</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p37"><span class="s10">The Scientist</span></p>
-<p class="p38"><span class="s10">Stage III · Achiever</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p20"><span class="s10">Alex Chen</span></p>
-<p class="p55"><span class="s10">THE ARCHITECT · STAGE IV</span></p>
-<p class="p56"><span class="s10">Systems Thinking</span></p>
-<p class="p56"><span class="s10">92%</span></p>
-<p class="p49"><span class="s1"></span><br></p>
-<p class="p56"><span class="s10">Contemplative Depth</span></p>
-<p class="p56"><span class="s10">78%</span></p>
-<p class="p52"><span class="s1"></span><br></p>
-<p class="p56"><span class="s10">Integration</span></p>
-<p class="p56"><span class="s10">85%</span></p>
-<p class="p53"><span class="s1"></span><br></p>
-<p class="p56"><span class="s10">Relational Depth</span></p>
-<p class="p56"><span class="s10">67%</span></p>
-<p class="p54"><span class="s1"></span><br></p>
-<p class="p57"><span class="s10">PHILOSOPHY</span></p>
-<p class="p57"><span class="s10">SYSTEMS</span></p>
-<p class="p57"><span class="s10">ZEN</span></p>
-<p class="p57"><span class="s10">LEADERSHIP</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p14"><span class="s4">COMMUNITY</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6"><span class="s4">A Community of</span><span class="s1"><br>
-</span><span class="s13">Curious Minds</span></h2>
-<p class="p16"><span class="s4">Aetherium brings together people who share a deeper orientation — not around demographics or affiliations, but around the desire to understand, grow, and contribute to something meaningful.</span></p>
-<p class="p56"><span class="s4">THINKERS</span></p>
-<p class="p56"><span class="s4">CREATORS</span></p>
-<p class="p56"><span class="s4">FOUNDERS</span></p>
-<p class="p56"><span class="s4">PHILOSOPHERS</span></p>
-<p class="p56"><span class="s4">SCIENTISTS</span></p>
-<p class="p56"><span class="s4">EXPLORERS</span></p>
-<p class="p56"><span class="s4">WRITERS</span></p>
-<p class="p56"><span class="s4">TECHNOLOGISTS</span></p>
-<p class="p56"><span class="s4">ARTISTS</span></p>
-<p class="p56"><span class="s4">EDUCATORS</span></p>
-<p class="p56"><span class="s4">CONTEMPLATIVES</span></p>
-<p class="p56"><span class="s4">ENTREPRENEURS</span></p>
-<p class="p58"><span class="s7">◎</span></p>
-<p class="p20"><span class="s7">Open Gatherings</span></p>
-<p class="p59"><span class="s7">Live conversations across philosophy, science, technology, culture, and governance — entered freely, moderated for quality and depth.</span></p>
-<p class="p60"><span class="s7">⊕</span></p>
-<p class="p20"><span class="s7">Study Circles</span></p>
-<p class="p59"><span class="s7">Small recurring groups working through important texts together. From Wilber to Kahneman. Rigorous, intimate, and genuinely transformative.</span></p>
-<p class="p61"><span class="s7">◈</span></p>
-<p class="p20"><span class="s7">Collaborative Missions</span></p>
-<p class="p59"><span class="s7">Teams forming around shared challenges — climate, governance, education, conscious entrepreneurship. Missions produce real things in the world.</span></p>
-<p class="p62"><span class="s7">❋</span></p>
-<p class="p20"><span class="s7">Salons</span></p>
-<p class="p59"><span class="s7">Curated conversations hosted by senior members and visiting thinkers. The Enlightenment salon model, restored for the modern era.</span></p>
-<p class="p58"><span class="s7">◐</span></p>
-<p class="p20"><span class="s7">Wisdom Circles</span></p>
-<p class="p59"><span class="s7">Mentorship gatherings between members at different developmental stages. The platform's most valuable resource is the people within it.</span></p>
-<p class="p63"><span class="s7">⟳</span></p>
-<p class="p20"><span class="s7">City Chapters</span></p>
-<p class="p59"><span class="s7">Ten members in a city form a local chapter. The global platform localizes into genuine, embodied relationship and regular in-person gathering.</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p64"><span class="s1">BEYOND THE SCREEN</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e8e4f6; -webkit-text-stroke: #e8e4f6"><span class="s1">Digital conversation becomes<br>
-</span><span class="s3">shared experience.</span></h2>
-<p class="p16"><span class="s1">The real world is the deepest classroom. As digital relationships deepen, Aetherium supports members in moving beyond the screen — into retreats, expeditions, and physical spaces designed for the same quality of conversation, in person.</span></p>
-<p class="p64"><span class="s10">SIGNATURE EXPERIENCE</span></p>
-<p class="p65"><span class="s10">The Integration Retreat</span></p>
-<p class="p66"><span class="s10">Seven days. Thirty participants. Philosophical inquiry, somatic practice, and group intelligence work in a setting designed to let transformation happen.</span></p>
-<p class="p67"><span class="s7">EXPEDITION</span></p>
-<p class="p68"><span class="s7">Sacred Landscape Journeys</span></p>
-<p class="p67"><span class="s7">GATHERING</span></p>
-<p class="p68"><span class="s7">City Salon Series</span></p>
-<p class="p67"><span class="s7">IMMERSION</span></p>
-<p class="p68"><span class="s7">Thinkers in Residence</span></p>
-<p class="p67"><span class="s7">SPACE</span></p>
-<p class="p68"><span class="s7">Physical Gathering Spaces</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p69"><span class="s4">THE VISION</span></p>
-<p class="p70"><span class="s4">Humanity is entering a new phase of its evolution.</span><span class="s1"><br>
-<br>
-</span><span class="s14">We are more connected than ever, but many feel alone.</span><span class="s15"><br>
-</span><span class="s14">We have unprecedented access to knowledge, yet wisdom often feels harder to find.</span><span class="s15"><br>
-</span><span class="s14">Our technologies grow more powerful, but our conversations grow more fragmented.</span><span class="s1"><br>
-<br>
-</span><span class="s4">The challenge of our time is no longer simply technological progress.</span><span class="s1"><br>
-<br>
-</span><span class="s5">It is human development.</span><span class="s1"><br>
-<br>
-</span><span class="s4">Aetherium exists for those who sense that the future of civilization will not be shaped by technology alone — but by the evolution of consciousness, culture, and community.</span><span class="s1"><br>
-<br>
-</span><span class="s14">This is the space where those connections become visible.</span></p>
-<p class="p71"><span class="s1"></span><br></p>
-<p class="p72"><span class="s4">AETHERIUM · EST. 2025</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1"></span><br></p>
-<p class="p69"><span class="s1">BEGIN</span></p>
-<h2 style="margin: 0.0px 26.0px 22.0px 26.0px; text-align: center; text-indent: -26.0px; font: 44.0px 'Helvetica Neue'; color: #a487ff; -webkit-text-stroke: #a487ff"><span class="s6">Enter the<br>
-</span><span class="s1">Conversation</span></h2>
-<p class="p74"><span class="s1">Join Aetherium. Explore who you are. Connect with others who are asking the same questions. Begin free — always.</span></p>
-<p class="p75"><span class="s1">Join Aetherium</span></p>
-<p class="p76"><span class="s1">Enter a Gathering</span></p>
-<p class="p77"><span class="s1">FREE TO JOIN · NO BARRIERS · REAL CONNECTION FROM DAY ONE</span></p>
-<p class="p13"><span class="s1"></span><br></p>
-<p class="p78"><span class="s4">AETHERIUM</span></p>
-<p class="p59"><span class="s4">A platform where people explore who they are, connect through meaningful discourse, and participate in experiences designed for human development.</span></p>
-<p class="p79"><span class="s4">PLATFORM</span></p>
-<ul class="ul1">
-  <li class="li59"><span class="s16"></span><span class="s4">Assessments</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Gatherings</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Identity</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Community</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Experiences</span></li>
-</ul>
-<p class="p79"><span class="s4">COMPANY</span></p>
-<ul class="ul1">
-  <li class="li59"><span class="s16"></span><span class="s4">About</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Philosophy</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Origin</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Careers</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Press</span></li>
-</ul>
-<p class="p79"><span class="s4">CONNECT</span></p>
-<ul class="ul1">
-  <li class="li59"><span class="s16"></span><span class="s4">Newsletter</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Substack</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">LinkedIn</span></li>
-  <li class="li59"><span class="s16"></span><span class="s4">Contact</span></li>
-</ul>
-<p class="p80"><span class="s4">© 2025 Aetherium</span></p>
-<p class="p80"><span class="s4">Privacy</span></p>
-<p class="p80"><span class="s4">Terms</span></p>
-<p class="p80"><span class="s4">Cookies</span></p>
+
+<canvas id="canvas"></canvas>
+
+<!-- ════════════════ NAV ════════════════ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Aetherium</a>
+  <ul class="nav-links">
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#gatherings">Gatherings</a></li>
+    <li><a href="#identity">Identity</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#origin">Origin</a></li>
+  </ul>
+  <a href="#cta" class="nav-enter">Enter a Gathering</a>
+</nav>
+
+<!-- ════════════════ 1. HERO ════════════════ -->
+<section class="hero">
+  <div class="orb-system">
+    <div class="orb o-nebula"></div>
+    <div class="orb o-mid"></div>
+    <div class="orb o-r3"></div>
+    <div class="orb o-r1"></div>
+    <div class="orb o-r2"></div>
+    <div class="orb o-particle"></div>
+    <div class="orb o-particle2"></div>
+    <div class="orb o-core"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-kicker">Human Development Platform</div>
+    <h1 class="hero-h1">Where Consciousness<br><em>Connects</em></h1>
+    <p class="hero-sub">Aetherium is a platform where people explore who they are, connect through meaningful discourse, and participate in experiences designed for human development.</p>
+    <div class="hero-btns">
+      <a href="#gatherings" class="btn-fill">Enter a Gathering</a>
+      <a href="#how-it-works" class="btn-outline">Explore the Platform</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-track"></div>
+    <div class="scroll-lbl">Scroll</div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 2. THE PROBLEM ════════════════ -->
+<section class="sec-d" id="problem">
+  <div class="w">
+    <div class="problem-lead">
+      <div>
+        <div class="chip chip-v">The Problem</div>
+        <h2 class="sec-title" style="margin-bottom:20px;">The Internet Lost<br><em>Something Important</em></h2>
+        <p class="sec-body">Early digital culture had something modern platforms quietly erased: real-time presence. The ability to step into a space and find others already there — engaged, curious, alive to the moment.<br><br>Today's platforms have replaced that with something else entirely.</p>
+      </div>
+      <div>
+        <p class="sec-body" style="margin-bottom:24px;">Social media rewards performance over presence. Feeds replace genuine conversation. Algorithms surface what provokes rather than what illuminates.</p>
+        <p class="sec-body">People rarely encounter one another at the level of ideas, values, or personal development. The digital world was built for attention — not for depth.</p>
+        <p class="sec-body" style="margin-top:28px; color:var(--text2); font-style:italic;">Aetherium is designed to restore meaningful exchange.</p>
+      </div>
+    </div>
+
+    <div class="g2">
+      <div class="prob-card">
+        <div class="prob-icon">⊘</div>
+        <div class="prob-title">Social Media Rewards Performance</div>
+        <p class="prob-body">Platforms built around followers, likes, and visibility encourage people to broadcast rather than converse. The architecture rewards performance. Real presence disappears behind the feed.</p>
+      </div>
+      <div class="prob-card">
+        <div class="prob-icon">◌</div>
+        <div class="prob-title">Online Connection Lacks Depth</div>
+        <p class="prob-body">Dating platforms reduce people to photographs and brief descriptions. Professional networks optimize for status signals. Nowhere online do people encounter each other through the lens of curiosity, ideas, and genuine development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 3. HOW IT WORKS ════════════════ -->
+<section class="sec" id="how-it-works">
+  <div class="w">
+    <div class="chip chip-v">How It Works</div>
+    <h2 class="sec-title">From self-discovery<br><em>to real connection.</em></h2>
+    <p class="sec-body" style="max-width:520px;margin-top:16px;">Aetherium guides you through a structured journey — beginning with who you are, and opening toward who you might become in relationship with others.</p>
+
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-ghost">1</div>
+        <div class="step-num">Step 01</div>
+        <span class="step-icon">◎</span>
+        <div class="step-title">Self-Discovery</div>
+        <p class="step-body">Complete reflective assessments that explore who you are at depth.</p>
+        <ul class="step-list">
+          <li>Personality structure</li>
+          <li>Core values</li>
+          <li>Intellectual curiosity</li>
+          <li>Developmental orientation</li>
+          <li>Cognitive style</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-ghost">2</div>
+        <div class="step-num">Step 02</div>
+        <span class="step-icon">⊕</span>
+        <div class="step-title">Create Your Identity</div>
+        <p class="step-body">Your results generate a living Aetherium Identity — your presence within the platform.</p>
+        <ul class="step-list">
+          <li>Personality insights</li>
+          <li>Archetypal orientation</li>
+          <li>AI-generated avatar</li>
+          <li>Evolving profile</li>
+          <li>Growth edge reflection</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-ghost">3</div>
+        <div class="step-num">Step 03</div>
+        <span class="step-icon">❋</span>
+        <div class="step-title">Enter a Gathering</div>
+        <p class="step-body">Step into a live conversation where thoughtful people are already engaged in dialogue.</p>
+        <ul class="step-list">
+          <li>See who is present</li>
+          <li>Enter discussions in real time</li>
+          <li>Move between topics</li>
+          <li>Deep, moderated discourse</li>
+          <li>No feed, no algorithm</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="step-ghost">4</div>
+        <div class="step-num">Step 04</div>
+        <span class="step-icon">◈</span>
+        <div class="step-title">Participate in Experiences</div>
+        <p class="step-body">Digital conversation evolves into real-world connection and shared experience.</p>
+        <ul class="step-list">
+          <li>Retreats and expeditions</li>
+          <li>Learning communities</li>
+          <li>Cultural gatherings</li>
+          <li>City chapters</li>
+          <li>Physical spaces</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 4. LIVE GATHERINGS ════════════════ -->
+<section class="sec-d" id="gatherings">
+  <div class="w">
+    <div class="chip chip-t">Live Now</div>
+    <h2 class="sec-title">Active <em>Gatherings</em></h2>
+    <p class="sec-body" style="max-width:540px;margin-top:16px;">Gatherings are live conversation environments. Enter any time, see who is present, and step into dialogue that is already unfolding. This is not a feed. It is a room.</p>
+
+    <div class="gatherings-layout">
+      <!-- Live room mockup -->
+      <div class="live-room">
+        <div class="room-header">
+          <div class="room-header-left">Philosophy of Consciousness</div>
+          <div class="room-header-right">
+            <div class="live-dot"></div>
+            Live · 12 present
+          </div>
+        </div>
+        <div class="room-participants">
+          <div class="participant">
+            <div class="p-av" style="background:linear-gradient(135deg,#b49eff,#64e0d4)">A</div>
+            <div class="p-info"><div class="p-name">Alex C.</div><div class="p-type">The Architect</div></div>
+          </div>
+          <div class="participant">
+            <div class="p-av" style="background:linear-gradient(135deg,#c4a256,#e49aac)">M</div>
+            <div class="p-info"><div class="p-name">Maya R.</div><div class="p-type">The Explorer</div></div>
+          </div>
+          <div class="participant">
+            <div class="p-av" style="background:linear-gradient(135deg,#64e0d4,#b49eff)">J</div>
+            <div class="p-info"><div class="p-name">James O.</div><div class="p-type">The Strategist</div></div>
+          </div>
+          <div class="participant">
+            <div class="p-av" style="background:linear-gradient(135deg,#e49aac,#c4a256)">S</div>
+            <div class="p-info"><div class="p-name">Sara K.</div><div class="p-type">The Philosopher</div></div>
+          </div>
+        </div>
+        <div class="room-messages">
+          <div class="msg">
+            <div class="msg-av" style="background:linear-gradient(135deg,#b49eff,#64e0d4)">A</div>
+            <div class="msg-body">
+              <div class="msg-who">Alex C.</div>
+              <div class="msg-text">If consciousness is fundamentally relational — as Whitehead suggests — what does that mean for how we design environments for human growth?</div>
+            </div>
+          </div>
+          <div class="msg">
+            <div class="msg-av" style="background:linear-gradient(135deg,#c4a256,#e49aac)">M</div>
+            <div class="msg-body">
+              <div class="msg-who">Maya R.</div>
+              <div class="msg-text">It means the container matters as much as the content. The room is part of the mind — which is exactly why the physical spaces Aetherium is building aren't optional.</div>
+            </div>
+          </div>
+          <div class="msg">
+            <div class="msg-av" style="background:linear-gradient(135deg,#64e0d4,#b49eff)">J</div>
+            <div class="msg-body">
+              <div class="msg-who">James O.</div>
+              <div class="msg-text">Bateson called that second-order change. You can't transform from within the same frame. The frame itself has to shift.</div>
+            </div>
+          </div>
+          <div class="msg">
+            <div class="msg-av" style="background:linear-gradient(135deg,#e49aac,#c4a256)">S</div>
+            <div class="msg-body">
+              <div class="msg-who">Sara K.</div>
+              <div class="msg-text">This is why I joined. Where else on the internet does this conversation actually happen?</div>
+            </div>
+          </div>
+        </div>
+        <div class="room-input-bar">
+          <div class="rib-hint">Share your perspective…</div>
+          <div class="rib-key">↵ Enter</div>
+        </div>
+      </div>
+
+      <!-- Active gatherings list -->
+      <div>
+        <div style="margin-bottom:16px;">
+          <div class="chip chip-t" style="margin-bottom:12px;">All Active Gatherings</div>
+        </div>
+        <div class="active-gatherings">
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">Philosophy of Consciousness</div>
+              <div class="ag-meta">Philosophy · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">12 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">The Future of AI & Consciousness</div>
+              <div class="ag-meta">Technology · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">9 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">Modern Spirituality & Science</div>
+              <div class="ag-meta">Philosophy · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">6 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">Human Flourishing in the 21st Century</div>
+              <div class="ag-meta">Culture · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">11 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">Integral Approaches to Leadership</div>
+              <div class="ag-meta">Development · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">8 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+          <a class="ag-item" href="#cta">
+            <div class="ag-left">
+              <div class="ag-topic">The Art of Meaningful Community</div>
+              <div class="ag-meta">Community · Open</div>
+            </div>
+            <div class="ag-right">
+              <div class="ag-dot"></div>
+              <div class="ag-count">5 gathered</div>
+              <div class="ag-enter">Enter →</div>
+            </div>
+          </a>
+        </div>
+        <div class="gath-cta-row">
+          <a href="#cta" class="btn-fill" style="display:inline-block;margin-top:20px;">Enter a Gathering</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 5. IDENTITY ════════════════ -->
+<section class="sec" id="identity">
+  <div class="w">
+    <div class="identity-layout">
+      <div class="identity-text">
+        <div class="chip chip-v">The Identity System</div>
+        <h2 class="sec-title" style="margin-bottom:20px;">Your Aetherium <em>Identity</em></h2>
+        <p class="sec-body" style="margin-bottom:24px;">Modern platforms reduce identity to a photograph and a follower count. Aetherium takes a different approach. Your profile reflects who you are becoming — not simply how you appear.</p>
+        <p class="sec-body">Through assessments, archetypal orientation, and AI synthesis, each member develops a living identity that expresses their developmental path, their curiosity, and their intellectual temperament.</p>
+        <div class="id-features">
+          <div class="id-feat">
+            <div class="id-feat-dot" style="background:var(--violet)"></div>
+            <div class="id-feat-name">Developmental Insights</div>
+            <div class="id-feat-desc">Your stage and growth edges</div>
+          </div>
+          <div class="id-feat">
+            <div class="id-feat-dot" style="background:var(--teal)"></div>
+            <div class="id-feat-name">Personality Patterns</div>
+            <div class="id-feat-desc">How you think and engage</div>
+          </div>
+          <div class="id-feat">
+            <div class="id-feat-dot" style="background:var(--gold)"></div>
+            <div class="id-feat-name">Archetypal Symbolism</div>
+            <div class="id-feat-desc">Your orientation and essence</div>
+          </div>
+          <div class="id-feat">
+            <div class="id-feat-dot" style="background:var(--rose)"></div>
+            <div class="id-feat-name">AI-Generated Avatar</div>
+            <div class="id-feat-desc">Symbolic visual identity</div>
+          </div>
+          <div class="id-feat">
+            <div class="id-feat-dot" style="background:var(--violet);opacity:0.6"></div>
+            <div class="id-feat-name">Evolving Profile</div>
+            <div class="id-feat-desc">Changes as you grow</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar card + floating members -->
+      <div class="avatar-circle">
+        <div class="float-av fa1">
+          <div class="fa-dot" style="background:linear-gradient(135deg,#b49eff,#64e0d4)"></div>
+          <div><div class="fa-name">The Explorer</div><div class="fa-type">Stage III · Achiever</div></div>
+        </div>
+        <div class="float-av fa2">
+          <div class="fa-dot" style="background:linear-gradient(135deg,#c4a256,#e49aac)"></div>
+          <div><div class="fa-name">The Builder</div><div class="fa-type">Stage IV · Pluralist</div></div>
+        </div>
+        <div class="float-av fa3">
+          <div class="fa-dot" style="background:linear-gradient(135deg,#64e0d4,#b49eff)"></div>
+          <div><div class="fa-name">The Philosopher</div><div class="fa-type">Stage V · Integral</div></div>
+        </div>
+        <div class="float-av fa4">
+          <div class="fa-dot" style="background:linear-gradient(135deg,#e49aac,#c4a256)"></div>
+          <div><div class="fa-name">The Scientist</div><div class="fa-type">Stage III · Achiever</div></div>
+        </div>
+        <div class="av-center-card">
+          <div class="avc-header">
+            <div class="avc-orb"></div>
+            <div class="avc-info">
+              <div class="avc-name">Alex Chen</div>
+              <div class="avc-arch">The Architect · Stage IV</div>
+            </div>
+          </div>
+          <div class="avc-bars">
+            <div class="avcb">
+              <div class="avcb-label"><span>Systems Thinking</span><span>92%</span></div>
+              <div class="avcb-track"><div class="avcb-fill bf-v" style="--w:92%"></div></div>
+            </div>
+            <div class="avcb">
+              <div class="avcb-label"><span>Contemplative Depth</span><span>78%</span></div>
+              <div class="avcb-track"><div class="avcb-fill bf-t" style="--w:78%"></div></div>
+            </div>
+            <div class="avcb">
+              <div class="avcb-label"><span>Integration</span><span>85%</span></div>
+              <div class="avcb-track"><div class="avcb-fill bf-g" style="--w:85%"></div></div>
+            </div>
+            <div class="avcb">
+              <div class="avcb-label"><span>Relational Depth</span><span>67%</span></div>
+              <div class="avcb-track"><div class="avcb-fill bf-r" style="--w:67%"></div></div>
+            </div>
+          </div>
+          <div class="avc-tags">
+            <span class="avc-tag">Philosophy</span>
+            <span class="avc-tag">Systems</span>
+            <span class="avc-tag">Zen</span>
+            <span class="avc-tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 6. COMMUNITY ════════════════ -->
+<section class="sec-d" id="community">
+  <div class="w">
+    <div class="chip chip-v">Community</div>
+    <h2 class="sec-title">A Community of<br><em>Curious Minds</em></h2>
+    <p class="sec-body" style="max-width:540px;margin-top:16px;">Aetherium brings together people who share a deeper orientation — not around demographics or affiliations, but around the desire to understand, grow, and contribute to something meaningful.</p>
+
+    <div class="member-types" style="margin-top:32px;margin-bottom:64px;">
+      <div class="member-pill">Thinkers</div>
+      <div class="member-pill">Creators</div>
+      <div class="member-pill">Founders</div>
+      <div class="member-pill">Philosophers</div>
+      <div class="member-pill">Scientists</div>
+      <div class="member-pill">Explorers</div>
+      <div class="member-pill">Writers</div>
+      <div class="member-pill">Technologists</div>
+      <div class="member-pill">Artists</div>
+      <div class="member-pill">Educators</div>
+      <div class="member-pill">Contemplatives</div>
+      <div class="member-pill">Entrepreneurs</div>
+    </div>
+
+    <div class="community-types">
+      <div class="ct">
+        <span class="ct-icon">◎</span>
+        <div class="ct-name">Open Gatherings</div>
+        <p class="ct-body">Live conversations across philosophy, science, technology, culture, and governance — entered freely, moderated for quality and depth.</p>
+      </div>
+      <div class="ct">
+        <span class="ct-icon">⊕</span>
+        <div class="ct-name">Study Circles</div>
+        <p class="ct-body">Small recurring groups working through important texts together. From Wilber to Kahneman. Rigorous, intimate, and genuinely transformative.</p>
+      </div>
+      <div class="ct">
+        <span class="ct-icon">◈</span>
+        <div class="ct-name">Collaborative Missions</div>
+        <p class="ct-body">Teams forming around shared challenges — climate, governance, education, conscious entrepreneurship. Missions produce real things in the world.</p>
+      </div>
+      <div class="ct">
+        <span class="ct-icon">❋</span>
+        <div class="ct-name">Salons</div>
+        <p class="ct-body">Curated conversations hosted by senior members and visiting thinkers. The Enlightenment salon model, restored for the modern era.</p>
+      </div>
+      <div class="ct">
+        <span class="ct-icon">◐</span>
+        <div class="ct-name">Wisdom Circles</div>
+        <p class="ct-body">Mentorship gatherings between members at different developmental stages. The platform's most valuable resource is the people within it.</p>
+      </div>
+      <div class="ct">
+        <span class="ct-icon">⟳</span>
+        <div class="ct-name">City Chapters</div>
+        <p class="ct-body">Ten members in a city form a local chapter. The global platform localizes into genuine, embodied relationship and regular in-person gathering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 7. EXPERIENTIAL ════════════════ -->
+<section class="sec" id="experiences">
+  <div class="w">
+    <div class="chip chip-g">Beyond the Screen</div>
+    <h2 class="sec-title">Digital conversation becomes<br><em>shared experience.</em></h2>
+    <p class="sec-body" style="max-width:540px;margin-top:16px;">The real world is the deepest classroom. As digital relationships deepen, Aetherium supports members in moving beyond the screen — into retreats, expeditions, and physical spaces designed for the same quality of conversation, in person.</p>
+    <div class="exp-bento">
+      <div class="exp-hero-card">
+        <div class="exp-tag">Signature Experience</div>
+        <div class="exp-title">The Integration Retreat</div>
+        <p class="exp-desc">Seven days. Thirty participants. Philosophical inquiry, somatic practice, and group intelligence work in a setting designed to let transformation happen.</p>
+      </div>
+      <div class="exp-sm-card">
+        <div class="exp-sm-tag">Expedition</div>
+        <div class="exp-sm-title">Sacred Landscape Journeys</div>
+      </div>
+      <div class="exp-sm-card">
+        <div class="exp-sm-tag">Gathering</div>
+        <div class="exp-sm-title">City Salon Series</div>
+      </div>
+      <div class="exp-sm-card">
+        <div class="exp-sm-tag">Immersion</div>
+        <div class="exp-sm-title">Thinkers in Residence</div>
+      </div>
+      <div class="exp-sm-card">
+        <div class="exp-sm-tag">Space</div>
+        <div class="exp-sm-title">Physical Gathering Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 8. MANIFESTO ════════════════ -->
+<section class="manifesto-sec" id="origin">
+  <div class="manifesto-inner">
+    <div class="chip chip-v" style="text-align:center;margin-bottom:48px;">The Vision</div>
+    <p class="manifesto-text">
+      Humanity is entering a new phase of its evolution.<br><br>
+      <em>We are more connected than ever, but many feel alone.<br>
+      We have unprecedented access to knowledge, yet wisdom often feels harder to find.<br>
+      Our technologies grow more powerful, but our conversations grow more fragmented.</em><br><br>
+      The challenge of our time is no longer simply technological progress.<br><br>
+      <strong>It is human development.</strong><br><br>
+      Aetherium exists for those who sense that the future of civilization will not be shaped by technology alone — but by the evolution of consciousness, culture, and community.<br><br>
+      <em>This is the space where those connections become visible.</em>
+    </p>
+    <div class="manifesto-rule"></div>
+    <div class="manifesto-sig">Aetherium · Est. 2025</div>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ 9. FINAL CTA ════════════════ -->
+<section class="cta-sec" id="cta">
+  <div class="cta-glow"></div>
+  <div class="w" style="position:relative;">
+    <div class="chip chip-v" style="text-align:center;">Begin</div>
+    <h2 class="cta-h2">Enter the<br><em>Conversation</em></h2>
+    <p class="cta-sub">Join Aetherium. Explore who you are. Connect with others who are asking the same questions. Begin free — always.</p>
+    <div class="cta-btns">
+      <a href="#" class="btn-fill" style="font-size:0.85rem;padding:15px 36px;">Join Aetherium</a>
+      <a href="#gatherings" class="btn-outline" style="font-size:0.85rem;padding:15px 28px;">Enter a Gathering</a>
+    </div>
+    <p class="cta-note">Free to join · No barriers · Real connection from day one</p>
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer>
+  <div class="w">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Aetherium</div>
+        <p class="footer-tagline">A platform where people explore who they are, connect through meaningful discourse, and participate in experiences designed for human development.</p>
+      </div>
+      <div>
+        <div class="footer-col-label">Platform</div>
+        <ul class="footer-links">
+          <li><a href="#">Assessments</a></li>
+          <li><a href="#">Gatherings</a></li>
+          <li><a href="#">Identity</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Experiences</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-label">Company</div>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Philosophy</a></li>
+          <li><a href="#">Origin</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-label">Connect</div>
+        <ul class="footer-links">
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Substack</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Aetherium</div>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════ SCRIPTS ════════════════ -->
+<script>
+// ── Starfield ──
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let W, H, stars = [];
+
+function resize() {
+  W = canvas.width  = window.innerWidth;
+  H = canvas.height = window.innerHeight;
+}
+
+function initStars() {
+  stars = [];
+  const count = Math.floor((W * H) / 6800);
+  for (let i = 0; i < count; i++) {
+    stars.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      r: Math.random() * 1.15 + 0.1,
+      o: Math.random() * 0.5 + 0.05,
+      speed: Math.random() * 0.35 + 0.04,
+      phase: Math.random() * Math.PI * 2,
+      hue: Math.random() > 0.85 ? 280 : 240
+    });
+  }
+}
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+  const t = Date.now() * 0.001;
+  for (const s of stars) {
+    const alpha = s.o * (0.55 + 0.45 * Math.sin(t * s.speed + s.phase));
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = s.hue === 280
+      ? `rgba(190,175,255,${alpha})`
+      : `rgba(200,195,255,${alpha})`;
+    ctx.fill();
+  }
+  requestAnimationFrame(draw);
+}
+
+resize(); initStars(); draw();
+window.addEventListener('resize', () => { resize(); initStars(); });
+
+// ── Nav opacity ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('opaque', window.scrollY > 50);
+}, { passive: true });
+
+// ── Gathering hover interaction ──
+document.querySelectorAll('.ag-item').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.style.cursor = 'pointer';
+  });
+});
+</script>
 </body>
 </html>
